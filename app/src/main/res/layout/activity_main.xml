@@ -1,0 +1,211 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <LinearLayout
+        android:id="@+id/quiz_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="textAutoComplete"
+            android:onClick="editText" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGrpQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/q1_i_watching_tv_when_paul_and_simon_arrived"
+                android:textColor="#424242"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/question1_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:onClick="onRadioGrpQuestion1"
+                android:text="@string/ans1_q1" />
+
+            <RadioButton
+                android:id="@+id/question1_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:onClick="onRadioGrpQuestion1"
+                android:text="@string/ans2_q1" />
+
+            <RadioButton
+                android:id="@+id/question1_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:onClick="onRadioGrpQuestion1"
+                android:text="@string/ans3_q1" />
+        </RadioGroup>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGrpQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/q2_did_you_used_to_with_dolls"
+                android:textColor="#424242"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/question2_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:onClick="onRadioGrpQuestion2"
+                android:text="@string/ans1_q2" />
+
+            <RadioButton
+                android:id="@+id/question2_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:onClick="onRadioGrpQuestion2"
+                android:text="@string/ans2_q2" />
+
+            <RadioButton
+                android:id="@+id/question2_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:onClick="onRadioGrpQuestion2"
+                android:text="@string/ans3_q2" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/q3_which_is_a_signal_word_for_simple_present"
+            android:textColor="#424242"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/Relative1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/question3_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:onClick="onClickcheckBox"
+                android:text="@string/ans1_q3" />
+
+            <CheckBox
+                android:id="@+id/question3_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="10dp"
+                android:onClick="onClickcheckBox"
+                android:text="@string/ans2_q3" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/Q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/q4_spinach_is_high_in_which_mineral"
+            android:textColor="#424242"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/answer"
+            android:inputType="textAutoComplete"
+            android:onClick="editText" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:onClick="Total"
+                android:text="@string/total" />
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/total"
+                android:layout_toRightOf="@id/total"
+                android:onClick="Submit"
+                android:text="@string/Submit" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

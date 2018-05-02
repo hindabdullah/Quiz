@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="ans1_q1">Was</string>
+    <string name="ans2_q1">Am</string>
+    <string name="ans3_q1">Is</string>
+    <string name="ans1_q2">play</string>
+    <string name="ans2_q2">playing</string>
+    <string name="ans3_q2">played</string>
+    <string name="ans1_q3">Now </string>
+    <string name="ans2_q3">Often</string>
+    <string name="name">Name</string>
+    <string name="q1_i_watching_tv_when_paul_and_simon_arrived">Q1: I ___ watching TV when Paul and Simon arrived</string>
+    <string name="q2_did_you_used_to_with_dolls">Q2: Did you used to ___ with dolls?</string>
+    <string name="q3_which_is_a_signal_word_for_simple_present">Q3: Which is a signal word for simple present?</string>
+    <string name="total">total</string>
+    <string name="Submit">Submit</string>
+    <string name="q4_spinach_is_high_in_which_mineral">Q4 Spinach is high in which mineral?</string>
+    <string name="answer">answer</string>
+</resources>
